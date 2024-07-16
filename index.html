@@ -33,13 +33,13 @@
     <nav class="navbar">
         <div class="container-base flex items-center justify-between">
             <div class="navbar-logo">
-                <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/DEC_Logo-Original.png" class="w-24" alt="">
+                <!-- <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/DEC_Logo-Original.png" class="w-24" alt=""> -->
             </div>
             <div class="navbar-menu capitalize max-lg:hidden">
                 <i class="fa-solid fa-bars lg:hidden text-white p-2 rounded bg-black"></i>
-                <ul class="flex gap-8">
+                <ul class="flex">
                     <li>
-                        <a href="javascript:void(0)">home</a>
+                        <a href="javascript:void(0)" class="h-full  hover:text-white hover:bg-slate-400">home</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">about us</a>
@@ -66,14 +66,39 @@
 
     <!-- hero area carousel -->
      <div class="hero-area">
-        <div class="owl-carousel hero-area-carousel">
-            <div class="hero-area-carousel">
-                <img src="https://www.synergyeye.com/images/main_banner.webp" alt="">
+        <div class="hero-area-carousel bg-[url('https://www.synergyeye.com/images/main_banner.webp')] h-lvh py-6">
+            <div class="container-base">
+                <div class="contact text-white mt-20">
+                    <h3 class="text-3xl capitalize ">your partners in eye care</h3> 
+                    <span class="block">Competence | Integrity | Safety | Compassion</span> 
+                    <input type="text" placeholder="Search by Disease or Doctor Services" class="p-2 rounded w-80 mt-9">
+                </div>
             </div>
         </div>
      </div>
-     
+
     <!--eyes service cards -->
+    <div class="our-services bg-slate-300 object-fill w-full my-6">
+        <div class="container-base py-6">
+            <h1 class="text-3xl border-b-2 p-2 border-cyan-500">Our Services</h1>
+            <div class="owl-carousel our-service-carousel">
+                <div class="group">
+                    <div class="card capitalize text-center bg-white rounded group-hover:-translate-y-3 group-hover:shadow-lg duration-300">
+                        <div class="card-img w-2/3 mx-auto mt-16">
+                            <img src="https://www.synergyeye.com/images/icon-cornea.png" class="w-full " alt="">
+                        </div>
+                        <div class="card-content py-5 "> 
+                            <div class="text-sm ">cornea & transplant</div>
+                        <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
+                            Read more
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-- eyes doctor carousel -->
     <!-- testimonial carousel -->
     <!-- footer -->
@@ -82,4 +107,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="assets/js/js.js"></script>
+<script>
+
+</script>
 </html>
