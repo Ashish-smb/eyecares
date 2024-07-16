@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- topbar -->
-    <div class="topbar bg-cyan-500 max-lg:hidden">
+    <div class="topbar bg-cyan-500 py-1 max-lg:hidden">
         <div class="container-base">
             <div class="g-cols2 ">
                 <div class="contact-detail flex items-center text-white gap-3">
@@ -33,28 +33,28 @@
     <nav class="navbar">
         <div class="container-base flex items-center justify-between">
             <div class="navbar-logo">
-                <!-- <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/DEC_Logo-Original.png" class="w-24" alt=""> -->
+                <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/DEC_Logo-Original.png" class="w-24" alt="">
             </div>
             <div class="navbar-menu capitalize max-lg:hidden">
-                <i class="fa-solid fa-bars lg:hidden text-white p-2 rounded bg-black"></i>
-                <ul class="flex">
+                <i class="fa-solid fa-bars lg:hidden text-white p-2 links rounded bg-black"></i>
+                <ul class="flex gap-1">
                     <li>
-                        <a href="javascript:void(0)" class="h-full  hover:text-white hover:bg-slate-400">home</a>
+                        <a href="javascript:void(0)" class="p-2 links">home</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">about us</a>
+                        <a href="javascript:void(0)" class="p-2 links">about us</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">doctors</a>
+                        <a href="javascript:void(0)" class="p-2 links">doctors</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">services</a>
+                        <a href="javascript:void(0)" class="p-2 links">services</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">disease</a>
+                        <a href="javascript:void(0)" class="p-2 links">disease</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">news & events</a>
+                        <a href="javascript:void(0)" class="p-2 links">news & events</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)" class="bg-cyan-500 text-white rounded p-2 hover:bg-cyan-600 duration-300">book appointment</a>
@@ -65,42 +65,172 @@
     </nav> 
 
     <!-- hero area carousel -->
-     <div class="hero-area">
-        <div class="hero-area-carousel bg-[url('https://www.synergyeye.com/images/main_banner.webp')] h-lvh py-6">
-            <div class="container-base">
-                <div class="contact text-white mt-20">
-                    <h3 class="text-3xl capitalize ">your partners in eye care</h3> 
-                    <span class="block">Competence | Integrity | Safety | Compassion</span> 
-                    <input type="text" placeholder="Search by Disease or Doctor Services" class="p-2 rounded w-80 mt-9">
-                </div>
+    <div class="hero-area">
+    <div class="hero-area-carousel bg-[url('https://www.synergyeye.com/images/main_banner.webp')] h-lvh py-6">
+        <div class="container-base">
+            <div class="contact mt-20">
+                <h3 class="text-3xl text-white capitalize ">your partners in eye care</h3> 
+                <span class="block text-white">Competence | Integrity | Safety | Compassion</span> 
+                <input type="text" placeholder="Search by Disease or Doctor Services" class="p-2 rounded w-80 mt-9">
             </div>
         </div>
-     </div>
+    </div>
+    </div>
 
     <!--eyes service cards -->
-    <div class="our-services bg-slate-300 object-fill w-full my-6">
+    <div class="our-services bg-slate-200 my-16">
         <div class="container-base py-6">
-            <h1 class="text-3xl border-b-2 p-2 border-cyan-500">Our Services</h1>
-            <div class="owl-carousel our-service-carousel">
+            <h1 class="text-4xl text-cyan-500 text-center font-semibold">Our Services</h1>
+            <div class="g-cols3 our-service-carousel">
                 <div class="group">
                     <div class="card capitalize text-center bg-white rounded group-hover:-translate-y-3 group-hover:shadow-lg duration-300">
                         <div class="card-img w-2/3 mx-auto mt-16">
-                            <img src="https://www.synergyeye.com/images/icon-cornea.png" class="w-full " alt="">
+                            <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/cataract-surgery-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
                         </div>
                         <div class="card-content py-5 "> 
-                            <div class="text-sm ">cornea & transplant</div>
+                            <div class="text-xl">cataract services</div>
                         <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
                             Read more
                         </a>
                         </div>
                     </div>
                 </div>
+                <div class="group">
+                    <div class="card capitalize text-center bg-white rounded group-hover:-translate-y-3 group-hover:shadow-lg duration-300">
+                        <div class="card-img w-2/3 mx-auto mt-16">
+                            <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/lasik-surgery-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
+                        </div>
+                        <div class="card-content py-5 "> 
+                            <div class="text-xl">refractive surgery</div>
+                        <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
+                            Read more
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="card capitalize text-center bg-white rounded group-hover:-translate-y-3 group-hover:shadow-lg duration-300">
+                        <div class="card-img w-2/3 mx-auto mt-16">
+                            <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/cornea-services-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
+                        </div>
+                        <div class="card-content py-5 "> 
+                            <div class="text-xl">cornea service</div>
+                        <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
+                            Read more
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
 
+            <div class="g-cols3">
+                <div class="group">
+                    <div class="card capitalize text-center bg-white rounded group-hover:-translate-y-3 group-hover:shadow-lg duration-300">
+                        <div class="card-img w-2/3 mx-auto mt-16">
+                            <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/retina-services-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
+                        </div>
+                        <div class="card-content py-5 "> 
+                            <div class="text-xl">retina services</div>
+                        <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
+                            Read more
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="card capitalize text-center bg-white rounded group-hover:-translate-y-3 group-hover:shadow-lg duration-300">
+                        <div class="card-img w-2/3 mx-auto mt-16">
+                            <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/glaucoma-services-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
+                        </div>
+                        <div class="card-content py-5 "> 
+                            <div class="text-xl">glaucoma services</div>
+                        <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
+                            Read more
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="card capitalize text-center bg-white rounded group-hover:-translate-y-3 group-hover:shadow-lg duration-300">
+                        <div class="card-img w-2/3 mx-auto mt-16">
+                            <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/Paediatric-Ophthalmology-and-Squint-Treatment-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
+                        </div>
+                        <div class="card-content py-5 "> 
+                            <div class="text-xl">squint & pediatric services</div>
+                        <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
+                            Read more
+                        </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- working with company -->
+    <div class="partners-company">
+        <h1 class="text-4xl capitalize text-center my-16">our partners</h1>
+        <div class="owl-carousel partners flex items-center px-8">
+            <div class="company-logo">
+                <img src="https://graphicsfamily.com/wp-content/uploads/edd/2020/05/Free-Global-Health-Care-PSD-Logo-Template-Download-scaled.jpg" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/11/medical-logo-design.jpeg" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://cse.noticebard.com/wp-content/uploads/sites/23/2023/07/WHO-Internship-Programme-2023.jpg" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://content-static.healthcare.inc/uploads/sites/2/2021/02/United_Healthcare_logo_PNG1.png" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/316603/ca94ddf59610e30e0cb3e897efc78ddd-health-company-logo.jpg" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://th.bing.com/th/id/OIP.p0l2d6w2Ec_SPJiLJtoAJAHaE8?rs=1&pid=ImgDetMain" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://dt2sdf0db8zob.cloudfront.net/wp-content/uploads/2020/05/9-Best-Eye-Logos-and-How-to-Make-Your-Own-for-Free-image2.png" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://th.bing.com/th/id/OIP.2bUXwfnSiR7FbxIJGhJ0TgHaHa?rs=1&pid=ImgDetMain" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://live.staticflickr.com/7279/7026281053_58fd992795.jpg" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://www.franchiseindia.com/uploads/news/fi/lenskart-a18a49d4db.jpg" alt="">
+            </div>
+            <div class="company-logo">
+                <img src="https://w7.pngwing.com/pngs/141/861/png-transparent-apollo-hospitals-apollo-hospital-indraprastha-apollo-hospital-dhaka-health-care-india-blue-text-logo.png" alt="">
+            </div>
+        </div>
+    </div>
+
     <!-- eyes doctor carousel -->
     <!-- testimonial carousel -->
+    <div class="testimonial h-[500px] w-full brightness-75 bg-no-repeat bg-cover bg-fixed" style="background-image: url(https://www.susrut.org/wp-content/uploads/2022/05/investigation.jpeg); background-position: center; ">
+        <div class="container-base py-16 text-white">
+            <h1 class="text-4xl uppercase text-center ">our strength</h1>
+            <div class="g-cols3 text-center flex justify-between mt-20">
+                <div class="fonts">
+                    <i class="fa-solid fa-tree-city text-7xl"></i>
+                    <h2 class="text-2xl mt-5">5000 +</h2>
+                    <span class="text-lg">village covered</span>
+                </div>
+                <div class="fonts">
+                    <i class="fa-regular fa-user text-7xl"></i>
+                    <h2 class="text-2xl mt-5">2427690 +</h2>
+                    <span class="text-lg">Community</span>
+                </div>
+                <div class="fonts ">
+                    <i class="fa-solid fa-eye text-7xl"></i>
+                    <h2 class="text-2xl mt-5">200875 +</h2>
+                    <span class="text-lg">Surgeries Through Eye <br> Screening Camps</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer -->
      <!-- footer-bottom -->
 </body>
