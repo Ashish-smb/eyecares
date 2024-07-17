@@ -3,7 +3,7 @@ $('.partners').owlCarousel({
     margin:20,
     autoplay:true,
     loop:true,
-    autoplayTimeout:2000,
+    autoplayTimeout:4000,
     dots:true,
     nav:true,
     responsive : {
@@ -20,7 +20,7 @@ $('.partners').owlCarousel({
 });
 
 $('.doctor-carousel').owlCarousel({
-    items:3,
+    // items:2,
     loop:true,
     margin :20,
     responsive:{
@@ -31,7 +31,7 @@ $('.doctor-carousel').owlCarousel({
             items:2
         },
         900: {
-            items:3
+            items:4
         }
     }
 });
