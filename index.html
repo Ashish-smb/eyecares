@@ -14,28 +14,34 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+    <!-- popup -->
+    <div class="popup">
+        <div class="popup-close text-white">close</div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, mollitia. Expedita fugiat, atque sapiente ab neque sint illo perspiciatis rerum, animi assumenda modi vel quisquam quidem, quod dignissimos labore eveniet!
+        </p>
+    </div>
+
     <!-- topbar -->
-    <div class="topbar bg-cyan-500 py-2 max-lg:hidden">
-        <div class="container-base">
-            <div class="g-cols2 ">
-                <div class="contact-detail flex items-center text-white gap-3">
-                    <i class="fa-solid fa-phone "></i>
-                    +99 99999999
-                </div>
-                <div class="social-media-font flex items-center justify-end text-white gap-10">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                </div>
+    <div class="topbar bg-cyan-500 px-16 py-2 max-lg:hidden">
+        <div class="g-cols2 ">
+            <div class="contact-detail flex items-center text-white gap-3">
+                <i class="fa-solid fa-phone "></i>
+                +91 90701180
+            </div>
+            <div class="social-media-font flex items-center justify-end text-white gap-10">
+                <i class="fa-brands fa-facebook cursor-pointer"></i>
+                <i class="fa-brands fa-instagram cursor-pointer"></i>
+                <i class="fa-brands fa-x-twitter cursor-pointer"></i>
+                <i class="fa-brands fa-youtube cursor-pointer"></i>
+                <i class="fa-brands fa-whatsapp cursor-pointer"></i>
             </div>
         </div>
     </div>
 
     <!-- navbar -->
     <nav class="navbar">
-        <div class="container-base py-2 flex items-center justify-between">
+        <div class="py-2 px-16 flex items-center justify-between">
             <div class="navbar-logo">
                 <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/DEC_Logo-Original.png" class="w-24" alt="">
             </div>
@@ -69,14 +75,30 @@
     </nav> 
 
     <!-- hero area carousel -->
-    <div class="hero-area">
-        <div class="hero-area-carousel bg-[url('https://www.synergyeye.com/images/main_banner.webp')] bg-no-repeat bg-cover h-[400px] py-6">
-            <div class="container-base">
-                <div class="contact mt-20">
-                    <h3 class="text-3xl text-white capitalize ">your partners in eye care</h3> 
-                    <span class="block text-white">Competence | Integrity | Safety | Compassion</span> 
-                    <input type="text" placeholder="Search by Disease or Doctor Services" class="p-2 border-none rounded w-80 mt-9">
-                </div>
+    <div class="hero-area flex">
+        <div class="hero-area-img w-[100%]">
+            <img src="https://slcacademy.in/wp-content/uploads/2024/01/NEET-1-1.webp" class="w-full h-full max-lg:hidden max-lg:w-full" alt="">
+        </div>
+        <div class="card-content bg-gradient-to-r from-cyan-500 via-cyan-700 to-cyan-900 w-full p-10">
+            <h2 class="uppercase text-4xl text-slate-100 font-semibold">we take care <br> because we care</h2>
+            <p class="text-slate-300">Excelent health service for all patients who come to our hospital</p>
+            <div class="fonts mt-6 flex capitalize">
+                <span>
+                    <i class="fa-thin fa-mobile py-2 text-2xl mx-6 cursor-pointer rounded-full px-4 text-cyan-800 bg-cyan-400 hover:bg-cyan-200 duration-300"></i>
+                    <p class="text-slate-300 text-sm text-center mt-7">online <br> medication</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-virus py-2 text-2xl mx-6 cursor-pointer rounded-full px-3 text-cyan-800 bg-cyan-400 hover:bg-cyan-200 duration-300"></i>
+                    <p class="text-slate-300 text-sm text-center mt-3">examination &<br> treatment</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-house-medical py-2 text-2xl mx-6 cursor-pointer rounded-full px-3 text-cyan-800 bg-cyan-400 hover:bg-cyan-200 duration-300"></i>
+                    <p class="text-slate-300 text-sm text-center mt-3">specialist <br>suggestion</p>
+                </span>
+                <span>  
+                    <i class="fa-solid fa-syringe py-2 text-2xl mx-6 cursor-pointer rounded-full px-3 text-cyan-800 bg-cyan-400 hover:bg-cyan-200 duration-300"></i>
+                    <p class="text-slate-300 text-sm text-center mt-3">medical<br> support</p>
+                </span>
             </div>
         </div>
     </div>
@@ -92,7 +114,7 @@
                             <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/cataract-surgery-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
                         </div>
                         <div class="card-content py-5 "> 
-                            <div class="text-xl">cataract services</div>
+                            <div class="text-lg">cataract services</div>
                         <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
                             Read more
                         </a>
@@ -105,7 +127,7 @@
                             <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/lasik-surgery-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
                         </div>
                         <div class="card-content py-5 "> 
-                            <div class="text-xl">refractive surgery</div>
+                            <div class="text-lg">refractive surgery</div>
                         <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
                             Read more
                         </a>
@@ -118,7 +140,7 @@
                             <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/cornea-services-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
                         </div>
                         <div class="card-content py-5 "> 
-                            <div class="text-xl">cornea service</div>
+                            <div class="text-lg">cornea service</div>
                         <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
                             Read more
                         </a>
@@ -133,7 +155,7 @@
                             <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/retina-services-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
                         </div>
                         <div class="card-content py-5 "> 
-                            <div class="text-xl">retina services</div>
+                            <div class="text-lg">retina services</div>
                         <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
                             Read more
                         </a>
@@ -146,7 +168,7 @@
                             <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/glaucoma-services-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
                         </div>
                         <div class="card-content py-5 "> 
-                            <div class="text-xl">glaucoma services</div>
+                            <div class="text-lg">glaucoma services</div>
                         <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
                             Read more
                         </a>
@@ -159,7 +181,7 @@
                             <img src="https://www.delhieyecentre.in/wp-content/uploads/2024/04/Paediatric-Ophthalmology-and-Squint-Treatment-delhi-eye-centre-260x179-1.webp" class="w-full " alt="">
                         </div>
                         <div class="card-content py-5 "> 
-                            <div class="text-xl">squint & pediatric services</div>
+                            <div class="text-lg">squint & pediatric services</div>
                         <a href="javascript:void(0)" class="text-sm underline text-cyan-800">
                             Read more
                         </a>
@@ -235,9 +257,9 @@
                         <img src="https://www.synergyeye.com/images/docs/Dr_Anita_Sethi.webp" alt="">
                     </div>
                     <div class="card-content capitalize text-center bg-white p-2 text-gray-500">
-                        <h2 class="text-2xl text-black">dr. anita sethi</h2>
-                        <div class="occupation text-sm mt-4">head ophthalmology, FMRI ocuplasty.</div>
-                        <div class="qulifiction text-sm my-3">MBBS MD (AIIMS), DNB, FRCS(eng)</div>
+                        <h2 class="text-lg font-semibold text-black">dr. anita sethi</h2>
+                        <div class="occupation text-sm mt-4">head ophthalmology.</div>
+                        <div class="qulifiction text-sm my-3">MBBS MD (AIIMS), DNB</div>
                         <a href="javascript:void(0)" class="w-full block py-1 text-white  bg-cyan-600 hover:bg-cyan-500 duration-200">know more</a>
                     </div>
                 </div>
@@ -247,7 +269,7 @@
                         <img src="https://www.synergyeye.com/images/docs/Dr_Arun_Sangal.webp" alt="">
                     </div>
                     <div class="card-content capitalize text-center bg-white p-2 text-gray-500">
-                        <h2 class="text-2xl text-black">Dr. arun sanghal</h2>
+                        <h2 class="text-lg font-semibold text-black">Dr. arun sanghal</h2>
                         <div class="occupation text-sm mt-4">cataract and refractive</div>
                         <div class="qulifiction text-sm my-3">MS, DOMS</div>
                         <a href="javascript:void(0)" class="w-full block py-1 text-white  bg-cyan-600 hover:bg-cyan-500 duration-200">know more</a>
@@ -259,8 +281,8 @@
                         <img src="https://www.synergyeye.com/images/docs/dr-aditi-ghosh.webp" alt="">
                     </div>
                     <div class="card-content capitalize text-center bg-white p-2 text-gray-500">
-                        <h2 class="text-2xl text-black">Dr. aditi ghosh dastidar</h2>
-                        <div class="occupation text-sm mt-4">cornea, ocular surface and refractive</div>
+                        <h2 class="text-lg font-semibold text-black">Dr. aditi ghosh </h2>
+                        <div class="occupation text-sm mt-4">cornea, ocular surface</div>
                         <div class="qulifiction text-sm my-3">MBBS, MS, FMRE,(cornea)</div>
                         <a href="javascript:void(0)" class="w-full block py-1 text-white  bg-cyan-600 hover:bg-cyan-500 duration-200">know more</a>
                     </div>
@@ -271,7 +293,7 @@
                         <img src="https://www.synergyeye.com/images/docs/dr-gyan-goyal.webp" alt="">
                     </div>
                     <div class="card-content capitalize text-center bg-white p-2 text-gray-500">
-                        <h2 class="text-2xl text-black">dr. gyan goyal</h2>
+                        <h2 class="text-lg font-semibold text-black">dr. gyan goyal</h2>
                         <div class="occupation text-sm mt-4">cataract and refractive</div>
                         <div class="qulifiction text-sm my-3">MBBS MS</div>
                         <a href="javascript:void(0)" class="w-full block py-1 text-white  bg-cyan-600 hover:bg-cyan-500 duration-200">know more</a>
@@ -283,8 +305,8 @@
                         <img src="https://www.synergyeye.com/images/docs/Dr_Pramod_Pandey.webp" alt="">
                     </div>
                     <div class="card-content capitalize text-center bg-white p-2 text-gray-500">
-                        <h2 class="text-2xl text-black">pramod k pandey</h2>
-                        <div class="occupation text-sm mt-4">former  director professor gnec, mamc.</div>
+                        <h2 class="text-lg font-semibold text-black">pramod k pandey</h2>
+                        <div class="occupation text-sm mt-4"> professor gnec, mamc.</div>
                         <div class="qulifiction text-sm my-3">MBBS (AIIMS), MD (AIIMS)</div>
                         <a href="javascript:void(0)" class="w-full block py-1 text-white  bg-cyan-600 hover:bg-cyan-500 duration-200">know more</a>
                     </div>

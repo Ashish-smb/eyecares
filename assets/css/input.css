@@ -37,9 +37,24 @@
         transform: scaleX(0);
     }
     .navbar ul li .links:hover::after {
-        transform-origin: bottom left;
         transform: scaleX(1);
     } 
+    .doctors .doctor-carousel {
+        @apply relative;
+    }
+    .doctors .doctor-carousel button {
+        @apply absolute -top-16 bg-cyan-300;
+    }
+    .doctors .doctor-carousel span {
+        @apply text-5xl;
+    }
+    .doctors .doctor-carousel button.owl-next {
+        @apply right-0 text-cyan-100;
+    }
+    .doctors .doctor-carousel button.owl-prev {
+        @apply right-5 text-cyan-100;
+    }
+
     .partners-company .partners {
         @apply relative;
     }
@@ -56,7 +71,26 @@
         @apply left-3;
     }
 
-
+    /* popup */
+    .popup {
+        position: fixed;
+        width: 500px;
+        padding: 20px;
+        background-color: #222;
+        color: #fff;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+    .popup.show {
+        display: block;
+        animation: showpopup 2s;
+    }
+    .popup .popup-close {
+        position: absolute;
+        cursor: pointer;
+    }
 
     .title {}
     .title-sm {}

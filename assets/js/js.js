@@ -22,16 +22,48 @@ $('.partners').owlCarousel({
 $('.doctor-carousel').owlCarousel({
     // items:2,
     loop:true,
+    dots:true,
+    nav:true,
     margin :20,
     responsive:{
         0: {
-            items:1
+            items:2
         },
         600: {
-            items:2
+            items:3
         },
         900: {
             items:4
         }
     }
 });
+
+// popup javascript 
+(function($) {
+    $.fn.showsidebar = function ( sel ) {
+        $(this).click(function() {
+            $(sel).addClass('show');
+        });
+        return this;
+    }
+
+    $.fn.hidesidebar = function(sel) {
+        $(this).click(function() {
+            $(sel).removeClass('show');
+        });
+        return this;
+    }
+
+    $.fn.showpopup = function(t) {
+        const sel = $(this);
+        setTimeout(function() {
+            sel.addClass('show');
+        },t);
+    }
+}( jQuery ));
+
+$('#modal').showsidebar('.modal');
+$('.popup-close').hidesidebar('.modal');
+
+$('popup').showpopup(2000);
+

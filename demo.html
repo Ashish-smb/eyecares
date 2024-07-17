@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .modal {
+            position: fixed;
+            width: 500px;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        .modal.show {
+            display: block;
+            animation: showModal 2s;
+        }
+        .modal-btn {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: yellow;
+            cursor: pointer;
+        }
+        @keyframes showModal {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-btn">Close</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt eveniet nisi cupiditate veniam quaerat doloremque atque possimus, illo voluptas beatae repudiandae sunt dolore quam laboriosam animi excepturi natus hic.
+    </div>
+    
+    <!-- <button id="showNavbar">
+        Show
+    </button>
+    <button id="showModal">Show Modal</button> -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    (function( $ ) {
+//  this fucntion use for show
+ $.fn.showSidebar = function( sel ) {
+     $(this).click( function() {
+         $(sel).addClass("show");
+     });
+     return this;
+ };
+// this function use for hide
+ $.fn.hideSidebar = function( sel ) {
+     $(this).click( function() {
+         $(sel).removeClass("show");
+     });
+     return this;
+ };
+// this function use for set time out
+ $.fn.showPopup = function( t ) {
+     const sel = $(this);
+     setTimeout( function() {
+         sel.addClass("show");
+     }, t);
+ }
+
+}( jQuery ));
+</script>
+<script>
+    // $("#showNavbar").showSidebar(".navbar");
+        // $(".close").hideSidebar(".navbar");
+
+        $("#showModal").showSidebar(".modal");
+        $(".modal-btn").hideSidebar(".modal");
+
+        $(".modal").showPopup( 2000 );
+</script>
+</html>
