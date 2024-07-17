@@ -3,79 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hide and Show Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        
-        .modal {
-            position: fixed;
-            width: 500px;
-            padding: 20px;
-            background-color: #222;
-            color: #fff;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            display: none;
+        .hidden {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
         }
-        .modal.show {
-            display: block;
-            animation: showModal 2s;
-        }
-        .modal-btn {
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            color: yellow;
-            cursor: pointer;
-        }
-        @keyframes showModal {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+        .visible {
+            transform: translateY(0);
+            transition: transform 0.3s ease-in-out;
         }
     </style>
 </head>
 <body>
-    <div class="modal">
-        <div class="modal-btn">Close</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nesciunt eveniet nisi cupiditate veniam quaerat doloremque atque possimus, illo voluptas beatae repudiandae sunt dolore quam laboriosam animi excepturi natus hic.
-    </div>
-    
-    
+    <nav id="navbar" class="fixed top-0 left-0 w-full bg-blue-500 text-white p-4 z-10">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">Brand</a>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Services</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-20">
+        <section class="h-screen bg-gray-200 p-8">
+            <h1 class="text-4xl">Welcome to Our Website</h1>
+        </section>
+        <section class="h-screen bg-gray-300 p-8">
+            <h2 class="text-3xl">About Us</h2>
+        </section>
+        <section class="h-screen bg-gray-400 p-8">
+            <h2 class="text-3xl">Our Services</h2>
+        </section>
+        <section class="h-screen bg-gray-500 p-8">
+            <h2 class="text-3xl">Contact Us</h2>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var lastScrollTop = 0;
+            $(window).scroll(function() {
+                var st = $(this).scrollTop();
+                if (st > lastScrollTop) {
+                    // Scroll Down
+                    $('#navbar').removeClass('visible').addClass('hidden');
+                } else {
+                    // Scroll Up
+                    $('#navbar').removeClass('hidden').addClass('visible');
+                }
+                lastScrollTop = st;
+            });
+        });
+    </script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-    (function( $ ) {
-//  this fucntion use for show
- $.fn.showSidebar = function( sel ) {
-     $(this).click( function() {
-         $(sel).addClass("show");
-     });
-     return this;
- };
-// this function use for hide
- $.fn.hideSidebar = function( sel ) {
-     $(this).click( function() {
-         $(sel).removeClass("show");
-     });
-     return this;
- };
-// this function use for set time out
- $.fn.showPopup = function( t ) {
-     const sel = $(this);
-     setTimeout( function() {
-         sel.addClass("show");
-     }, t);
- }
-
-}( jQuery ));
-</script>
-<script>
-    // $("#showNavbar").showSidebar(".navbar");
-        // $(".close").hideSidebar(".navbar");
-
-        $("#showModal").showSidebar(".modal");
-        $(".modal-btn").hideSidebar(".modal");
-
-        $(".modal").showPopup( 2000 );
-</script>
 </html>
