@@ -40,30 +40,37 @@ $('.doctor-carousel').owlCarousel({
 
 // popup javascript 
 (function($) {
-    $.fn.showsidebar = function ( sel ) {
-        $(this).click(function() {
-            $(sel).addClass('show');
+            $.fn.showsidebar = function(sel) {
+                $(this).click(function() {
+                    $(sel).addClass('show');
+                });
+                return this;
+            };
+
+            $.fn.hidesidebar = function(sel) {
+                $(this).click(function() {
+                    $(sel).removeClass('show');
+                });
+                return this;
+            };
+
+            $.fn.showpopup = function(t) {
+                const sel = $(this);
+                setTimeout(function() {
+                    sel.addClass('show');
+                }, t);
+            };
+        })(jQuery);
+
+        $(document).ready(function() {
+            $('#showpopup').showsidebar('.popup');
+
+            $('.popup-close').click(function() {
+                $('.popup').removeClass('show');
+            });
+
+            $('.popup').showpopup(2000);
         });
-        return this;
-    }
 
-    $.fn.hidesidebar = function(sel) {
-        $(this).click(function() {
-            $(sel).removeClass('show');
-        });
-        return this;
-    }
 
-    $.fn.showpopup = function(t) {
-        const sel = $(this);
-        setTimeout(function() {
-            sel.addClass('show');
-        },t);
-    }
-}( jQuery ));
-
-$('#modal').showsidebar('.modal');
-$('.popup-close').hidesidebar('.modal');
-
-$('popup').showpopup(2000);
 

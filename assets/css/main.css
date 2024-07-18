@@ -726,6 +726,11 @@ video {
 .popup .popup-close {
   position: absolute;
   cursor: pointer;
+  right: 10px;
+  top: 10px;
+}
+
+@keyframes showpopup{
 }
 
 .title {
